@@ -1,0 +1,18 @@
+.container {
+  border: #000000 solid 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 95%;
+}
+
+.table thead {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 95%;
+}
+
+.mat-table {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 95%;
+}

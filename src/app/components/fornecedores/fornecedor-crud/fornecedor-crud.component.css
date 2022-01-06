@@ -1,0 +1,36 @@
+/* .example-input {
+  min-width: 20px;
+  max-width: 50px;
+  width: 100%;
+} */
+
+/* .controles-container {
+  width: 100%;
+  padding: 5%;
+}
+
+.controles-container > * {
+  width: 100%;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-infix {
+  padding: 1em 0 .35em 0;
+} */
+
+.table {
+  padding: 0,2em;
+}
+
+.form-row {
+  padding: 0,3em;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 4px 4px 0 0;
+    padding: .4em .4em 0 .5em;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-flex {
+  height: 2px !important;
+  padding: 2px 2px;
+  }

@@ -1,0 +1,12 @@
+.container {
+  background-color: #3f51b5;
+  /* padding: 20px 50px;
+  display: flex; */
+  flex-direction: row-reverse;
+  position: absolute;
+  bottom: 0;
+}
+
+.copyright {
+  color: #FFF;
+}

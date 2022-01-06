@@ -1,0 +1,33 @@
+export class ProdutoModel {
+  idProduto: number = 0;
+  descricaoProduto: string = '';
+  ferenciaProduto: string = '';
+  codigoBarraProduto: string = '';
+  generoProduto: string = '';
+  ncmshProduto: string = '';
+  statusProduto: boolean = true;
+  id_secao: number = 0;
+  id_modelo: number = 0;
+  id_cor: number = 0;
+  id_marca: number = 0;
+  id_grade: number = 0;
+  id_unidade: number = 0;
+  id_localizacao: number = 0;
+  id_fornecedor: number = 0;
+ // DateTime dataCadastro { get; set; }
+  informacoes: string = '';
+  fotoProduto1: string = '';
+  fotoProduto2: string = '';
+  fotoProduto3: string = '';
+  saldoAtual: number = 0;
+  saldoMinimo: number = 0;
+  valorCusto: number = 0;
+  valorImposto: number = 0;
+  valorFrete: number = 0;
+  valorDesconto: number = 0;
+  margemGanho: number = 0;
+  vendaVista: number = 0;
+  vendaPrazo: number = 0;
+  vendaPromocao: number = 0;
+  pesoProduto: number = 0;
+}

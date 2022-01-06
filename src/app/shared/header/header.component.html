@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <span>Sistema da Loja</span>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Usuario</button>
+  <button mat-menu-item><a routerLink="marcas"></a>Marca</button>
+</mat-menu>
+</mat-toolbar>

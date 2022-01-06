@@ -1,0 +1,95 @@
+<h1 mat-dialog-title class="mb-1">Cadastrar Fornecedor</h1>
+<div mat-dialog-content>
+  <form class="example-form" [formGroup]="formFornecedor" appearance="standard">
+    <table class="form-row"><tr>
+      <td><mat-form-field class="examplo-input mt-2" appearance="standard">
+        <mat-label>Razao Social</mat-label>
+        <input matInput name="razaoSocial" formControlName="razaoSocial">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input mt-2" appearance="standard">
+        <mat-label>Nome Fantasia</mat-label>
+        <input matInput name="nomeFantasia" formControlName="nomeFantasia">
+      </mat-form-field></td>
+    </tr></table>
+    <table class="form-row"><tr>
+      <!-- <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Cep</mat-label>
+        <input matInput maxlength="10" name="cepFornecedor" formControlName="cepFornecedor" onkeypress="$(this).mask('00.000-009')" >
+      </mat-form-field></td> -->
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Logradouro</mat-label>
+        <input matInput name="logradouroFornecedor" formControlName="logradouroFornecedor">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Numero</mat-label>
+        <input matInput name="numeroLogradouro" formControlName="numeroLogradouro">
+      </mat-form-field></td>
+    </tr></table>
+    <table class="form-row"><tr>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Bairro</mat-label>
+        <input matInput name="bairroFornecedor" formControlName="bairroFornecedor">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Cidade</mat-label>
+        <input matInput name="cidadeFornecedor" formControlName="cidadeFornecedor">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Site</mat-label>
+        <input matInput name="siteFornecedor" formControlName="siteFornecedor">
+      </mat-form-field></td>
+    </tr></table>
+    <table class="form-row"><tr>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Email</mat-label>
+        <input matInput name="emailFornecedor" formControlName="emailFornecedor">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Telefone</mat-label>
+        <input matInput name="telefoneFornecedor" formControlName="telefoneFornecedor">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>WhatsApp</mat-label>
+        <input matInput name="whatsAppFornecedor" formControlName="whatsAppFornecedor">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Pix</mat-label>
+        <input matInput name="pixFornecedor" formControlName="pixFornecedor">
+      </mat-form-field></td>
+    </tr></table>
+    <table class="form-row"><tr>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Banco</mat-label>
+        <input matInput name="bancoFornecedor" formControlName="bancoFornecedor">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Agencia</mat-label>
+        <input matInput name="agenciaFornecedor" formControlName="agenciaFornecedor">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Conta</mat-label>
+        <input matInput name="contaFornecedor" formControlName="contaFornecedor">
+      </mat-form-field></td>
+    </tr></table>
+    <table class="form-row"><tr>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Titular</mat-label>
+        <input matInput name="titularFornecedor" formControlName="titularFornecedor">
+      </mat-form-field></td>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Observação</mat-label>
+        <input matInput name="observacaoFornecedor" formControlName="observacaoFornecedor">
+      </mat-form-field></td>
+    </tr></table>
+    <table class="form-row"><tr>
+      <td><mat-form-field class="examplo-input" appearance="standard">
+        <mat-label>Mercadorias</mat-label>
+        <input matInput name="mercadoriaFornecedor" formControlName="mercadoriaFornecedor">
+      </mat-form-field></td>
+    </tr></table>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-raised-button color="primary" (click)="salvar()">Salvar</button>
+</div>

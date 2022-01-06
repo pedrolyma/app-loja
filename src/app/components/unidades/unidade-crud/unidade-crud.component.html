@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Cadastrar Unidade</h1>
+<div mat-dialog-content>
+  <form class="example-form" [formGroup]="formUnidade" appearance="fill">
+    <mat-form-field class="example-full-width">
+      <mat-label>Descricao</mat-label>
+      <input matInput name="descricaoUnidade" formControlName="descricaoUnidade">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-raised-button color="primary" (click)="salvar()">Salvar</button>
+</div>

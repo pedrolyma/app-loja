@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="mat-elevation-z8">
+    <button mat-raised-button (click)="addGrade()" color="primary"><mat-icon>add</mat-icon>Nova Grade</button>
+    <button mat-raised-button (click)="sair()" color="warn"><mat-icon>exit_to_app</mat-icon>Sair</button>
+    <table mat-table [dataSource]="listaGrade">
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="idGrade">
+        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <td mat-cell *matCellDef="let row"> {{row.idGrade}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="inicioGrade">
+        <th mat-header-cell *matHeaderCellDef> Inicio </th>
+        <td mat-cell *matCellDef="let row"> {{row.inicioGrade}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="fimGrade">
+        <th mat-header-cell *matHeaderCellDef> Fim </th>
+        <td mat-cell *matCellDef="let row"> {{row.fimGrade}} </td>
+      </ng-container>
+
+            <!-- Weight Column -->
+      <ng-container matColumnDef="intervalo">
+         <th mat-header-cell *matHeaderCellDef> Descricao </th>
+         <td mat-cell *matCellDef="let row"> {{row.intervalo}} </td>
+      </ng-container>
+
+            <!-- Weight Column -->
+      <ng-container matColumnDef="qtdeItensGrade">
+          <th mat-header-cell *matHeaderCellDef> Itens </th>
+          <td mat-cell *matCellDef="let row"> {{row.qtdeItensGrade}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-icon-button><mat-icon>edit</mat-icon></button>
+          <button mat-icon-button color="primary"><mat-icon>delete</mat-icon></button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                  showFirstLastButtons
+                  aria-label="Select page of listaMarca marca">
+    </mat-paginator> -->
+  </div>
+</div>

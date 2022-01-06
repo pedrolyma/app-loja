@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="mat-elevation-z8">
+    <button mat-raised-button (click)="addFornecedor()" color="primary"><mat-icon>add</mat-icon>Novo Fornecedor</button>
+    <button mat-raised-button (click)="sair()" color="warn"><mat-icon>exit_to_app</mat-icon>Sair</button>
+    <table mat-table [dataSource]="listaFornecedor">
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="idFornecedor">
+        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <td mat-cell *matCellDef="let row"> {{row.idFornecedor}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="razaoSocial">
+        <th mat-header-cell *matHeaderCellDef> Razao Social </th>
+        <td mat-cell *matCellDef="let row"> {{row.razaoSocial}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="nomeFantasia">
+        <th mat-header-cell *matHeaderCellDef> Nome Fantasia </th>
+        <td mat-cell *matCellDef="let row"> {{row.nomeFantasia}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="telefoneFornecedor">
+        <th mat-header-cell *matHeaderCellDef> Telefone </th>
+        <td mat-cell *matCellDef="let row"> {{row.telefoneFornecedor}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="whastAppFornecedor">
+        <th mat-header-cell *matHeaderCellDef> WhatsApp </th>
+        <td mat-cell *matCellDef="let row"> {{row.whatsAppFornecedor}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="emailFornecedor">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let row"> {{row.emailFornecedor}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="siteFornecedor">
+        <th mat-header-cell *matHeaderCellDef> Site </th>
+        <td mat-cell *matCellDef="let row"> {{row.siteFornecedor}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="mercadoriaFornecedor">
+        <th mat-header-cell *matHeaderCellDef> Principais Mercadorias </th>
+        <td mat-cell *matCellDef="let row"> {{row.mercadoriaFornecedor}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="observacaoFornecedor">
+        <th mat-header-cell *matHeaderCellDef> Observação </th>
+        <td mat-cell *matCellDef="let row"> {{row.observacaoFornecedor}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-icon-button><mat-icon>edit</mat-icon></button>
+          <button mat-icon-button color="primary"><mat-icon>delete</mat-icon></button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                  showFirstLastButtons
+                  aria-label="Select page of listaMarca marca">
+    </mat-paginator> -->
+  </div>
+</div>
